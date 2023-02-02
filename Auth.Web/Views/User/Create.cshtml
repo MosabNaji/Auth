@@ -1,0 +1,28 @@
+﻿@model CreateUserViewModel
+
+<h1>Add New User</h1>
+
+<div class="col-md-4">
+    <form asp-action="Create" >
+
+    <div class="form-groub">
+    <label class="label-control" asp-for="Email" ></label>
+    <input class="form-control" asp-for="Email" />
+    </div>
+
+    <div class="form-groub">
+    <label class="label-control" asp-for="PhoneNumber"></label>
+    <input class="form-control" asp-for="PhoneNumber" />
+    </div>
+
+    <div class="form-groub">
+    <label class="label-control" asp-for="Password"></label>
+    <input class="form-control" asp-for="Password" />
+    </div>
+    <br />
+
+    <input type="submit" value="Save" class="btn btn-primary" />
+    <a href="~/User/Index" class="btn btn-danger" >Cancel</a>
+
+</form>
+</div>

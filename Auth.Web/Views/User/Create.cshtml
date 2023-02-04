@@ -19,6 +19,13 @@
     <label class="label-control" asp-for="Password"></label>
     <input class="form-control" asp-for="Password" />
     </div>
+    <div class="form-groub">
+    <label class="label-control" asp-for="UserType"></label>
+    <select asp-for="UserType" class="form-control">
+        <option value="@UserType.Admin" >Admin</option>
+        <option value="@UserType.Employee"> Employee </option>
+    </select>
+    </div>
     <br />
 
     <input type="submit" value="Save" class="btn btn-primary" />

@@ -40,6 +40,8 @@ namespace Auth.Web
 
             services.AddRazorPages();
             services.AddControllersWithViews();
+
+            services.AddAutoMapper(typeof(Startup)); //Ì⁄‰Ì „·› «·√Ê Ê „«»— “Ì ‰›” „”«— «·” «—  «»
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
